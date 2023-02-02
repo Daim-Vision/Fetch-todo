@@ -1,0 +1,129 @@
+.body {
+    display: flex;
+    justify-content: center;
+    background-image: url('wallpaperbetter.jpg');
+    background-size: 100%;
+    background-repeat: none;
+}
+
+.title {
+    margin-top: 100px;
+    color: #fff;
+  text-shadow:
+    0 0 1px #fff,
+    0 0 2px #fff,
+    0 0 5px #fff,
+    0 0 11px rgb(151, 14, 142),
+    0 0 20px rgb(164, 21, 140),
+    0 0 30px rgb(154, 22, 180),
+    0 0 55px rgb(176, 27, 171),
+    0 0 80px rgb(137, 48, 157);
+    text-align: center;
+}
+
+.inp {
+    border: 1px solid  rgb(116, 6, 118);
+    box-shadow: rgb(128, 6, 139);
+    border-radius: 0px 0px 0px 0px;
+    background-color: rgb(218, 181, 252);
+}
+
+.inp:hover {
+    border: solid 2px rgb(249, 218, 244);
+    border-radius: 0px 0px 0px 0px;
+    box-shadow: 
+      0 0 .1rem rgb(183, 6, 163),
+      0 0 .2rem rgb(156, 2, 161),
+      0 0 .3rem rgb(167, 8, 220),
+      0 0 .8rem rgb(183, 7, 199),
+      0 0 1rem rgb(168, 7, 177),
+      inset 0 0 1.3rem rgb(240, 160, 242);  
+}
+
+.add {
+    background-color: rgb(218, 181, 252);
+    border: 1px;
+    height: 16.5px;
+    border-radius: 0px 5px 5px 0px;
+    
+}
+
+.add:hover {
+    box-shadow: 
+    0 0 .1rem rgb(183, 6, 163),
+    0 0 .2rem rgb(156, 2, 161),
+    0 0 .3rem rgb(167, 8, 220),
+    0 0 .8rem rgb(183, 7, 199),
+    0 0 1rem rgb(168, 7, 177),
+    inset 0 0 1.3rem rgb(240, 160, 242);  
+}
+
+.container {
+    margin: auto;
+}
+
+@keyframes flicker {
+    0%, 18%, 22%, 25%, 53%, 57%, 100% {
+      text-shadow:
+        0 0 1px #fff,
+        0 0 2px #fff,
+        0 0 5px #fff,
+        0 0 11px rgb(202, 37, 220),
+        0 0 20px rgb(186, 10, 192),
+        0 0 30px rgb(203, 9, 184),
+        0 0 55px rgb(204, 11, 230),
+        0 0 80px rgb(196, 10, 146);
+    }
+    20%, 24%, 55% {       
+      text-shadow: none;
+    }
+  }
+  
+
+  .title {
+    animation: flicker 1.5s infinite alternate;
+    margin-left: 35px;     
+}
+  
+.del {
+  background-color: rgb(218, 181, 252);
+    border: 1px;
+    height: 16.5px;
+    border-radius: 5px 0px 0px 5px;
+    margin-left: 240px;
+}
+
+.del:hover {
+  box-shadow: 
+  0 0 .1rem rgb(183, 6, 163),
+  0 0 .2rem rgb(156, 2, 161),
+  0 0 .3rem rgb(167, 8, 220),
+  0 0 .8rem rgb(183, 7, 199),
+  0 0 1rem rgb(168, 7, 177),
+  inset 0 0 1.3rem rgb(240, 160, 242);  
+}
+
+.list {
+  display: flex;
+  justify-content: left;
+  height: 400px;
+  overflow: scroll;
+}
+
+.li {
+  display: flex;
+  margin-bottom: 20px;
+  text-align: center;
+  list-style-type: none;
+  border-bottom: 1px solid rgb(235, 11, 235);
+  color: rgb(221, 0, 203);
+  justify-content: space-between;
+}
+
+.ul {
+  margin-top: 50px;
+  overflow: scroll;
+  color:rgb(154, 22, 180);
+}
+
+
